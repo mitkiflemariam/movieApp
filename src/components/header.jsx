@@ -4,7 +4,7 @@ function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className=" w-full bg-black text-white flex flex-col fixed top-0 shadow-md">
+    <header className=" w-full bg-black text-white flex flex-col fixed top-0 z-40 shadow-md">
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
         <a href="#" className="text-3xl font-bold text-white">
