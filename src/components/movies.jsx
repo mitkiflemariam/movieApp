@@ -23,8 +23,10 @@ const CustomNextArrow = ({ onClick }) => (
 );
 
 function Movies() {
-  const apiKey = "fd3311ecfd2af752b2fea9aad18cbd0b";
-  const apiUrl = `https://api.themoviedb.org/3/trending/all/week?api_key=${apiKey}`;
+  const apiKey = import.meta.env.VITE_API_KEY;
+
+  const apiUrl = `${import.meta.env.VITE_API_URL}?api_key=${apiKey}`;
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
