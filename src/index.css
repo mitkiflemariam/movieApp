@@ -2,19 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
+@layer base {
   body {
     background-color: #14161b;
   }
 }
 
-.slick-slide > div {
-  margin: 0 10px;
+.slick-slide {
+  padding: 0 10px; /* Reduce default padding */
 }
 
-.slick-dots li.slick-active button:before {
-  color:orange !important;
+.slick-list {
+  margin: 0 -10px; /* Adjust margin to remove gaps */
 }
+
+.slick-track {
+  display: flex;
+}
+
 /* .header {
   z-index: 1;
 }
